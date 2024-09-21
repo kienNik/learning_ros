@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
         transform_cam3d.header.stamp = ros::Time::now();
         broadcaster.sendTransform(transform);
         broadcaster_cam3d.sendTransform(transform_cam3d);
-        ros::Rate(1.0).sleep();
+        ros::Rate(10.0).sleep();
     }
 
     return 0;
